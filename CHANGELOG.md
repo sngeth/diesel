@@ -4,6 +4,14 @@ All user visible changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/), as described
 for Rust libraries in [RFC #1105](https://github.com/rust-lang/rfcs/blob/master/text/1105-api-evolution.md)
 
+## Unreleased
+
+### Removed
+
+* The internal use macro `select_column_workaround!` has been removed. If you
+  were relying on this internal macro, you can simply delete the line that was
+  calling it.
+
 ## [0.11.4] - 2017-02-21
 
 ### Fixed
