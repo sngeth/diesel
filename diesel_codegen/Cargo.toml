@@ -27,7 +27,7 @@ proc-macro = true
 
 [features]
 default = ["dotenv"]
-lint = ["clippy"]
+lint = ["clippy", "diesel/lint", "diesel_infer_schema/lint"]
 postgres = ["diesel_infer_schema/postgres", "diesel/postgres"]
 sqlite = ["diesel_infer_schema/sqlite", "diesel/sqlite"]
 mysql = ["diesel_infer_schema/mysql", "diesel/mysql"]

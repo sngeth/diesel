@@ -27,7 +27,7 @@ regex = "0.1.48"
 
 [features]
 default = ["postgres", "sqlite", "mysql"]
-lint = ["clippy"]
+lint = ["clippy", "diesel/lint", "diesel_infer_schema/lint"]
 postgres = ["diesel/postgres", "diesel_infer_schema/postgres"]
 sqlite = ["diesel/sqlite", "diesel_infer_schema/sqlite"]
 mysql = ["diesel/mysql", "diesel_infer_schema/mysql"]

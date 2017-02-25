@@ -110,7 +110,7 @@ impl<T: Expression> AsExpression<T::SqlType> for T {
 /// Columns will implement this for their table. Certain special types, like
 /// `CountStar` and `Bound` will implement this for all sources. All other
 /// expressions will inherit this from their children.
-pub trait SelectableExpression<QS>: Expression {
+pub trait SelectableExpression<QS: ?Sized>: Expression {
     type SqlTypeForSelect;
 }
 
